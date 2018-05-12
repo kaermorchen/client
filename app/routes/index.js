@@ -7,9 +7,9 @@ import measure from '../utils/measure';
 export default Route.extend(RouteWithSearch, {
   model() {
     return hash({
-      topAddons: this.get('store').query('addon', { page: { limit: 10 }, filter: { top: true }, sort: 'ranking', include: 'categories' }),
-      newAddons: this.get('store').query('addon', { page: { limit: 10 }, sort: '-publishedDate', include: 'categories' }),
-      recentlyScoredAddons: this.get('store').query('addon', { page: { limit: 10 }, filter: { recentlyReviewed: true }, include: 'categories' })
+      topAddons: this.get('store').query('addon', { page: { limit: 10 }, filter: { top: true }, sort: 'ranking' }),
+      newAddons: this.get('store').query('addon', { page: { limit: 10 }, sort: '-publishedDate' }),
+      recentlyScoredAddons: this.get('store').query('addon', { page: { limit: 10 }, filter: { recentlyReviewed: true } })
     });
   },
 
