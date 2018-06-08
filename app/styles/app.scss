@@ -26,6 +26,7 @@
 @import "components/page-layout";
 @import "loading";
 @import "canary_test_results";
+@import "ember-mdi";
 
 ::-ms-clear {
   display: none;
@@ -81,4 +82,16 @@ $ember-power-select-highlighted-background: $light-gray;
   &:hover {
     color: $dark-gray;
   }
+}
+
+.fill-hay {
+  fill: $hay;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.align-items-center {
+  align-items: center !important;
 }
