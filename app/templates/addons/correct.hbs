@@ -1,11 +1,11 @@
 <div class="addons-correct with-default-styling">
   <h1 class="d-flex align-items-center">
     {{#if model.isOfficial}}
-      {{mdi-icon "star-circle" size=36 class="fill-hay" title="Official Ember-CLI addon"}}
+      {{mdi-icon "star-circle" size=36 class="fill-hay mr-2" title="Official Ember-CLI addon"}}
     {{/if}}
 
     {{#if model.isCliDependency}}
-      {{mdi-icon "star-circle" size=36 class="fill" title="Dependency of newly generated Ember-CLI applications"}}
+      {{mdi-icon "star-circle" size=36 class="mr-2" title="Dependency of newly generated Ember-CLI applications"}}
     {{/if}}
 
     {{model.name}}

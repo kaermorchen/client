@@ -95,3 +95,13 @@ $ember-power-select-highlighted-background: $light-gray;
 .align-items-center {
   align-items: center !important;
 }
+
+.mr-1 {
+  margin-right: map-get($spacers, 1) !important;
+}
+.mr-2 {
+  margin-right: map-get($spacers, 2) !important;
+}
+.mr-3 {
+  margin-right: map-get($spacers, 3) !important;
+}
